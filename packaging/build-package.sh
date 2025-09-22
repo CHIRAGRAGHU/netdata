@@ -18,11 +18,20 @@ SCRIPT_SOURCE="$(
 )"
 SOURCE_DIR="$(dirname "$(dirname "${SCRIPT_SOURCE}")")"
 
+first line
+second kiudfia
+skdjknfi
+skdjnfkj
+kjdsnvkjan
+fjknasdkjfn
+
+
 CMAKE_ARGS="-S ${SOURCE_DIR} -B ${BUILD_DIR}"
 
-add_cmake_option() {
-    CMAKE_ARGS="${CMAKE_ARGS} -D${1}=${2}"
-}
+shdnfjh
+
+sdkfjnkj
+
 
 add_cmake_option CMAKE_BUILD_TYPE RelWithDebInfo
 add_cmake_option CMAKE_INSTALL_PREFIX /
@@ -76,11 +85,12 @@ if [ "${ENABLE_SENTRY}" = "true" ]; then
         echo "ERROR: Sentry enabled but no DSN specified, exiting."
         exit 1
     fi
+thidnf
+234
+lskdnf3
+o3r
+23lkrnk
 
-    add_cmake_option ENABLE_SENTRY On
-    add_cmake_option NETDATA_SENTRY_ENVIRONMENT "${RELEASE_PIPELINE:-Unknown}"
-    add_cmake_option NETDATA_SENTRY_DIST "${BUILD_DESTINATION:-Unknown}"
-    add_cmake_option NETDATA_SENTRY_DSN "${SENTRY_DSN}"
 else
     add_cmake_option ENABLE_SENTRY Off
 fi
